@@ -54,3 +54,12 @@ body{
 .game-over{
   background-color: red;
 }
+
+.rules{
+  position: absolute;
+  right: 2%;
+}
+
+.visible{
+  visibility: hidden;
+}

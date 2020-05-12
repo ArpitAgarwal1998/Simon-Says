@@ -7,6 +7,7 @@ $(document).keypress(function(){
   if (val == false){
     val = true;
     $('h1').text('Level 0');
+    $('.rules').toggleClass('visible');
     nextSequence();
   }
 });
@@ -34,7 +35,7 @@ $('.btn').click(function(){
 
 function showSequence(color){
     $('#'+color).toggleClass('animate');
-    setTimeout(function(){$('#'+color).toggleClass('animate');},50);
+    setTimeout(function(){$('#'+color).toggleClass('animate');},150);
 }
 
 function playAudio(color){
